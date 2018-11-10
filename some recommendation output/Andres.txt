@@ -1,0 +1,104 @@
+(ANDRES)~~KNNBasic - cosine, anime_db_n~~
+Rank:   3        Gintama° (28977)        9.54971749454
+Rank:   7        Ginga Eiyuu Densetsu (820)      9.35014655998
+Rank:   5        Gintama' (9969)         9.29904873408
+Rank:   13       Gintama. (34096)        9.29894349651
+Rank:   9        Gintama': Enchousen (15417)     9.24916580349
+Rank:   12       Owarimonogatari 2nd Season (35247)      9.22508974494
+Rank:   15       Gintama (918)   9.19903283747
+Rank:   34       Mushishi Zoku Shou (21939)      9.12537487449
+Rank:   36       Mushishi (457)          9.12453909244
+Rank:   106      Shinsekai yori (13125)          9.07506432973
+Rank:   59       Mushishi Special: Hihamukage (21329)    9.05027674872
+Rank:   25       Mushishi Zoku Shou 2nd Season (24701)   9.02582450825
+Rank:   16       Haikyuu!!: Karasuno Koukou VS Shiratorizawa Gakuen Koukou (32935)       9.02523713458
+Rank:   24       Shouwa Genroku Rakugo Shinjuu: Sukeroku Futatabi-hen (33095)    9.02405340594
+Rank:   64       Aria The Origination (3297)     8.97615203156
+Rank:   6        Hunter x Hunter (2011) (11061)          8.97457798086
+Rank:   45       Mushishi Zoku Shou: Suzu no Shizuku (28957)     8.92524726336
+Rank:   35       Natsume Yuujinchou Roku (34591)         8.92515623926
+Rank:   44       Kizumonogatari II: Nekketsu-hen (31757)         8.92474714803
+Rank:   29       Rurouni Kenshin: Meiji Kenkaku Romantan - Tsuioku-hen (44)      8.90046843457
+Rank:   20       Made in Abyss (34599)   8.89923997294
+Rank:   21       Kizumonogatari III: Reiketsu-hen (31758)        8.8988584915
+Rank:   46       Monster (19)    8.87530583357
+Rank:   23       Haikyuu!! Second Season (28891)         8.87511546754
+Rank:   83       Slam Dunk (170)         8.85078516356
+Rank:   55       Natsume Yuujinchou San (10379)          8.85046685956
+Rank:   47       Bakuman. 3rd Season (12365)     8.85008349489
+Rank:   73       Ghost in the Shell: Stand Alone Complex 2nd GIG (801)   8.84861989017
+Rank:   112      Mahou Shoujo Madoka?Magica Movie 3: Hangyaku no Monogatari (11981)      8.8251995023
+Rank:   177      NHK ni Youkoso! (1210)          8.82450253269
+Rank:   71       Gintama Movie 1: Shinyaku Benizakura-hen (7472)         8.82425800002
+Rank:   93       Mushishi Zoku Shou: Odoro no Michi (24687)      8.80090097471
+Rank:   124      Mahou Shoujo Madoka?Magica Movie 2: Eien no Monogatari (11979)          8.80059634146
+Rank:   82       Major S5 (5028)         8.80017373923
+Rank:   131      Katanagatari (6594)     8.79996468346
+Rank:   57       JoJo no Kimyou na Bouken: Diamond wa Kudakenai (31933)          8.79930795656
+Rank:   26       Cowboy Bebop (1)        8.79915654779
+Rank:   359      Tamayura: Sotsugyou Shashin Part 4 - Ashita (29831)     8.77945967161
+Rank:   69       No Game No Life: Zero (33674)   8.77505981605
+Rank:   27       Hajime no Ippo (263)    8.77489195805
+Rank:   43       Natsume Yuujinchou Shi (11665)          8.75075161346
+Rank:   50       Hajime no Ippo: Rising (19647)          8.75021731916
+Rank:   222      Steins;Gate: Kyoukaimenjou no Missing Link - Divide By Zero (32188)     8.74990111359
+Rank:   97       Gintama°: Aizome Kaori-hen (32366)      8.74988775459
+Rank:   110      Barakamon (22789)       8.74972774214
+Rank:   41       Hajime no Ippo: New Challenger (5258)   8.72539084831
+Rank:   159      Stranger: Mukou Hadan (2418)    8.72531540549
+Rank:   33       Monogatari Series: Second Season (17074)        8.70019387529
+Rank:   54       Natsume Yuujinchou Go (32983)   8.7000865898
+Rank:   90       Usagi Drop (10162)      8.69990565391
+
+
+(ANDRES)~~KNNWithMeans - cosine, anime_db_n~~
+Rank:   7        Ginga Eiyuu Densetsu (820)      9.40233159353
+Rank:   453      Hyouge Mono (9996)      9.34335048999
+Rank:   3        Gintama° (28977)        9.23396172621
+Rank:   341      Ginga Eiyuu Densetsu Gaiden: Senoku no Hoshi, Senoku no Hikari (3371)   9.2178458519
+Rank:   762      Densetsu Kyojin Ideon: Hatsudou-hen (2761)      9.19929777974
+Rank:   12       Owarimonogatari 2nd Season (35247)      9.15911505439
+Rank:   68       Ashita no Joe 2 (2921)          9.14367518238
+Rank:   1122     Uchuu Kyoudai: Number Zero (22583)      9.12549070713
+Rank:   451      Ginga Eiyuu Densetsu Gaiden: Rasen Meikyuu (3665)       9.1131362379
+Rank:   64       Aria The Origination (3297)     9.09997167558
+Rank:   5        Gintama' (9969)         9.07590142174
+Rank:   179      Versailles no Bara (338)        9.07565577027
+Rank:   1220     Area 88 (1488)          9.05900399458
+Rank:   15       Gintama (918)   9.04277951457
+Rank:   13       Gintama. (34096)        9.04050293368
+Rank:   9        Gintama': Enchousen (15417)     9.01686541356
+Rank:   20       Made in Abyss (34599)   9.01657710094
+Rank:   16       Haikyuu!!: Karasuno Koukou VS Shiratorizawa Gakuen Koukou (32935)       9.01363854128
+Rank:   106      Shinsekai yori (13125)          8.97930778117
+Rank:   3556     Saibi (21027)   8.93839966171
+Rank:   34       Mushishi Zoku Shou (21939)      8.92606959697
+Rank:   6        Hunter x Hunter (2011) (11061)          8.91232889239
+Rank:   24       Shouwa Genroku Rakugo Shinjuu: Sukeroku Futatabi-hen (33095)    8.91184632937
+Rank:   1755     Soukou Kihei Votoms: Red Shoulder Document - Yabou no Roots (2585)      8.9035191384
+Rank:   73       Ghost in the Shell: Stand Alone Complex 2nd GIG (801)   8.9028798391
+Rank:   259      Aria The Natural (962)          8.88891378514
+Rank:   45       Mushishi Zoku Shou: Suzu no Shizuku (28957)     8.88679821773
+Rank:   25       Mushishi Zoku Shou 2nd Season (24701)   8.88249886658
+Rank:   46       Monster (19)    8.86806232745
+Rank:   23       Haikyuu!! Second Season (28891)         8.86755697494
+Rank:   108      Detective Conan: Episode One - The Great Detective Turned Small (34036)         8.86364361316
+Rank:   438      Kindaichi Shounen no Jikenbo (TV) (2076)        8.85669021665
+Rank:   418      Touch (1065)    8.85072681462
+Rank:   1832     Masuda Kousuke Gekijou Gag Manga Biyori 2 (2518)        8.84567966984
+Rank:   359      Tamayura: Sotsugyou Shashin Part 4 - Ashita (29831)     8.84451442846
+Rank:   59       Mushishi Special: Hihamukage (21329)    8.83871185764
+Rank:   112      Mahou Shoujo Madoka?Magica Movie 3: Hangyaku no Monogatari (11981)      8.83715204951
+Rank:   1622     Shashinkan (20671)      8.83063205936
+Rank:   36       Mushishi (457)          8.82330876153
+Rank:   83       Slam Dunk (170)         8.82134610109
+Rank:   137      Shirobako (25835)       8.81097019267
+Rank:   1337     Ningen Shikkaku: Director's Cut-ban (7651)      8.80987048638
+Rank:   130      Fate/Zero (10087)       8.80976300135
+Rank:   27       Hajime no Ippo (263)    8.80112314102
+Rank:   916      Sentou Mecha Xabungle (2254)    8.80048965418
+Rank:   1816     Aikatsu! Movie (22819)          8.79151143693
+Rank:   21       Kizumonogatari III: Reiketsu-hen (31758)        8.78243586261
+Rank:   26       Cowboy Bebop (1)        8.76322342927
+Rank:   4470     Kazoku no Hanashi (21333)       8.76275231432
+Rank:   57       JoJo no Kimyou na Bouken: Diamond wa Kudakenai (31933)          8.75982310293

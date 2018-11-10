@@ -1,0 +1,4 @@
+*.csv
+!id_user.csv
+!anime_list.csv
+!anime_db_n.csv
