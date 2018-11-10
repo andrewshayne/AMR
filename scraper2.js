@@ -3,7 +3,7 @@ const client = new MAL();
 
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const csvWriter = createCsvWriter({
-    path: 'anime_list.csv',
+    path: 'anime_list9999.csv',
     header: [
         {id: 'rank', title: 'RANK'},
         {id: 'title', title: 'TITLE'},

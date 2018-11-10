@@ -136,10 +136,6 @@ def get_top_n(predictions, n=10):
 	
 ##################################?
 def read_item_names():
-	"""Read the u.item file from MovieLens 100-k dataset and return two
-	mappings to convert raw ids into movie names and movie names into raw ids.
-	"""
-
 	rid_to_name = {}
 	name_to_rid = {}
 	with open('id_user.csv', 'r', newline='') as f:
@@ -189,7 +185,6 @@ if __name__ == '__main__':
 	
 	
 	
-	
 	# get a prediction for specific users and items.
 	uid = my_username
 	iid = str(19) # Monster
@@ -212,7 +207,7 @@ if __name__ == '__main__':
 	for item in top_list:
 		print('Rank:\t' + anime_list[item][1], '\t', anime_list[item][0] + ' (' + item + ')', '\t', my_dict[item])
 	
-	'''	
+	'''	this should print a list of your worst recommendations?
 	print('\n WORST')
 	worst_list = sorted(my_dict, key=my_dict.get, reverse=False)[:50]
 	for item in worst_list:
@@ -223,42 +218,6 @@ if __name__ == '__main__':
 	#testset = trainset.build_anti_testset()
 	#predictions = algo.test(testset)
 	#print(get_top_n(predictions, n=10))
-	
-	
-	'''
-	
-	# GET KNN
-	
-	# Read the mappings raw id <-> movie name
-	rid_to_name, name_to_rid = read_item_names()
-	
-	# Retrieve inner id of the movie Toy Story
-	my_raw_id = name_to_rid[my_username]
-	print('my_raw_id: ' + my_raw_id)
-	my_inner_id = algo.trainset.to_inner_iid(my_raw_id)
-	print('my_inner_id: ' + my_inner_id)
-	# Retrieve inner ids of the nearest neighbors of Toy Story.
-	
-	my_neighbors = algo.get_neighbors(my_inner_id, k=10)
-	#my_neighbors = algo.get_neighbors(my_username, k=10)
-	
-	# Convert inner ids of the neighbors into names.
-	my_neighbors = (algo.trainset.to_raw_iid(inner_id)
-                       for inner_id in my_neighbors)
-	my_neighbors = (rid_to_name[rid]
-                       for rid in my_neighbors)
-
-	
-	print()
-	print('The 10 nearest neighbors of ' + my_username + ' are:')
-	for movie in my_neighbors:
-		print(movie)
-	
-	'''
-	
-	
-	
-	
 	
 	
 	

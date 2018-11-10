@@ -1,0 +1,24 @@
+{
+  "name": "amr",
+  "version": "1.0.0",
+  "description": "+- Quick Overview ----------------------------------------------------+       To form our database, we must:       - Pull the top N rated anime (only what we consider relevant)       - Pull a large set of active users       - Retrieve each user's anime list       To recommend, we simply run our single recommender script +---------------------------------------------------------------------+",
+  "main": "scraper2.js",
+  "dependencies": {
+    "csv-writer": "^1.2.0",
+    "urllib": "^2.31.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewshayne/AMR.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewshayne/AMR/issues"
+  },
+  "homepage": "https://github.com/andrewshayne/AMR#readme"
+}
