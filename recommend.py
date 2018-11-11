@@ -13,6 +13,9 @@ import csv
 import sys
 import os
 
+import json
+import pprint
+
 my_username = sys.argv[1]
 dataset = os.path.expanduser('anime_db_n.csv')
 #dataset = 'anime_db300.csv'
@@ -78,33 +81,69 @@ def add_to_trainset(my_ratings):
 			anime_list[row[2]] = (row[1],row[0])
 	
 
+# OLD XML PARSER!! USE JSON PARSER BELOW NOW
+# function to return the ratings from a user
+#def get_ratings(username):
+#	user_xml = 'https://myanimelist.net/malappinfo.php?u=' + username + '&status=all&type=anime'
+#	fp = urlreq.urlopen(user_xml)
+#	data = fp.read()
+#	fp.close()
+#
+#	data = xmltodict.parse(data)
+#	if(isinstance(data['myanimelist'], type(None))):
+#		return
+#
+#	thing = data['myanimelist']['myinfo']['user_completed']
+#	if(int(thing) < N_ANIME):
+#		return
+#
+#	ratings = {}
+#	count = 0
+#
+#	for anime in data['myanimelist']['anime']: #if completed
+#		if(anime['my_status'] == '2'):
+#			if(int(anime['my_score']) > 0):
+#				count += 1
+#				#print(str(count) + '. ' + anime['series_title'] + ' : ' + anime['my_score'])
+#				ratings[anime['series_animedb_id']] = anime['my_score']
+#
+#	if(len(ratings) > N_ANIME): #MUST HAVE COMPLETED N_ANIME
+#		print(len(ratings), '/', thing, '\t', username)
+#
+#	return ratings
+	
+	
 # function to return the ratings from a user
 def get_ratings(username):
-	user_xml = 'https://myanimelist.net/malappinfo.php?u=' + username + '&status=all&type=anime'
-	fp = urlreq.urlopen(user_xml)
+	user_json = 'https://myanimelist.net/animelist/' + username + '/load.json'
+	fp = urlreq.urlopen(user_json)
 	data = fp.read()
 	fp.close()
+	#2 = completed
+	#6 = plan to watch
+	
+	parsed_json = json.loads(data)
 
-	data = xmltodict.parse(data)
-	if(isinstance(data['myanimelist'], type(None))):
+	pp = pprint.PrettyPrinter(indent=4)
+	pp.pprint(parsed_json[12])
+	
+	if(len(parsed_json) < N_ANIME):
+		print('Go watch more anime')
 		return
-
-	thing = data['myanimelist']['myinfo']['user_completed']
-	if(int(thing) < N_ANIME):
+		
+	if not parsed_json:
 		return
-
+	
 	ratings = {}
 	count = 0
 
-	for anime in data['myanimelist']['anime']: #if completed
-		if(anime['my_status'] == '2'):
-			if(int(anime['my_score']) > 0):
+	for anime in parsed_json:
+		if(anime['status'] == 2):
+			print('[ ' + str(anime['score']) + ' ]:\t' + str(anime['anime_title']) )
+			if(int(anime['score']) > 0):
 				count += 1
 				#print(str(count) + '. ' + anime['series_title'] + ' : ' + anime['my_score'])
-				ratings[anime['series_animedb_id']] = anime['my_score']
-
-	if(len(ratings) > N_ANIME): #MUST HAVE COMPLETED N_ANIME
-		print(len(ratings), '/', thing, '\t', username)
+				ratings[anime['anime_id']] = anime['score']
 
 	return ratings
 	
