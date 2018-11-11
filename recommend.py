@@ -8,7 +8,7 @@ from surprise.model_selection import cross_validate
 
 from collections import defaultdict
 import urllib.request as urlreq
-import xmltodict
+#import xmltodict
 import csv
 import sys
 import os
@@ -82,7 +82,6 @@ def add_to_trainset(my_ratings):
 	
 
 # OLD XML PARSER!! USE JSON PARSER BELOW NOW
-# function to return the ratings from a user
 #def get_ratings(username):
 #	user_xml = 'https://myanimelist.net/malappinfo.php?u=' + username + '&status=all&type=anime'
 #	fp = urlreq.urlopen(user_xml)
@@ -115,7 +114,7 @@ def add_to_trainset(my_ratings):
 	
 # function to return the ratings from a user
 def get_ratings(username):
-	user_json = 'https://myanimelist.net/animelist/' + username + '/load.json'
+	user_json = 'https://myanimelist.net/animelist/' + username + '/load.json?status=2'
 	fp = urlreq.urlopen(user_json)
 	data = fp.read()
 	fp.close()
@@ -138,12 +137,11 @@ def get_ratings(username):
 	count = 0
 
 	for anime in parsed_json:
-		if(anime['status'] == 2):
-			print('[ ' + str(anime['score']) + ' ]:\t' + str(anime['anime_title']) )
-			if(int(anime['score']) > 0):
-				count += 1
-				#print(str(count) + '. ' + anime['series_title'] + ' : ' + anime['my_score'])
-				ratings[anime['anime_id']] = anime['score']
+		print('[ ' + str(anime['score']) + ' ]:\t' + str(anime['anime_title']) )
+		if(int(anime['score']) > 0):
+			count += 1
+			#print(str(count) + '. ' + anime['series_title'] + ' : ' + anime['my_score'])
+			ratings[anime['anime_id']] = anime['score']
 
 	return ratings
 	
